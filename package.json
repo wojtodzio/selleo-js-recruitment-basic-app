@@ -2,7 +2,8 @@
   "name": "js_pairing",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint app/javascript"
   },
   "jest": {
     "rootDir": "./app/javascript",
@@ -20,6 +21,10 @@
   },
   "devDependencies": {
     "babel-jest": "^21.0.2",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.1.0",
     "jest": "^21.1.0",
     "webpack-dev-server": "^2.8.1"
   }

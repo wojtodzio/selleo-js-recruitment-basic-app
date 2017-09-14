@@ -1,4 +1,5 @@
+import jQuery from 'jquery';
 import Sum from '../components/sum';
 
-import jQuery from "jquery";
-window.$ = window.jQuery = jQuery;
+window.$ = jQuery;
+window.jQuery = jQuery;
