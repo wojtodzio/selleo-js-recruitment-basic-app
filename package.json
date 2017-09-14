@@ -1,10 +1,25 @@
 {
   "name": "js_pairing",
   "private": true,
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "rootDir": "./app/javascript",
+    "transform": {
+      "\\.(js|jsx)$": "babel-jest",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__transformers__/fileTransformer.js"
+    }
+  },
   "dependencies": {
-    "@rails/webpacker": "^3.0.1"
+    "@rails/webpacker": "^3.0.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   },
   "devDependencies": {
+    "babel-jest": "^21.0.2",
+    "jest": "^21.1.0",
     "webpack-dev-server": "^2.8.1"
   }
 }
