@@ -1,3 +1,4 @@
 import Sum from '../components/sum';
 
-console.log(Sum(10, 20));
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
